@@ -68,7 +68,29 @@ image = image.resize((50, 50))
 with col1:
 	st.title("MeritoBuddy AI")
 with col2:
-	st.image(image, use_column_width = True)
+	# st.image(image)
+
+	# Add custom CSS for right alignment
+	st.markdown(
+	    """
+	    <style>
+	    .right-aligned-img {
+	        display: block;
+	        margin-left: auto;
+	        margin-right: 0;
+	    }
+	    </style>
+	    """,
+	    unsafe_allow_html=True,
+	)
+	
+	# Display the image
+	st.markdown(
+	    """
+	    <img src="https://github.com/RoobanSappani/TestRagProject/blob/main/logo.png" class="right-aligned-img" alt="Example Image">
+	    """,
+	    unsafe_allow_html=True,
+	)
 
 # Query input
 query = st.text_input("Enter your query:")
