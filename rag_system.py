@@ -70,25 +70,12 @@ with col1:
 with col2:
 	# st.image(image)
 
-	# Add custom CSS for right alignment
 	st.markdown(
-	    """
-	    <style>
-	    .right-aligned-img {
-	        display: block;
-	        margin-left: auto;
-	        margin-right: 0;
-	    }
-	    </style>
-	    """,
-	    unsafe_allow_html=True,
-	)
-	
-	# Display the image
-	st.markdown(
-	    """
-	    <img src="https://github.com/RoobanSappani/TestRagProject/blob/main/logo.png" class="right-aligned-img" alt="Example Image">
-	    """,
+        """
+        <div style="text-align: right;">
+            <img src="https://raw.githubusercontent.com/RoobanSappani/TestRagProject/refs/heads/main/logo.png" alt="Logo" style="width: 50px; height: auto;">
+        </div>
+        """,
 	    unsafe_allow_html=True,
 	)
 
