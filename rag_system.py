@@ -73,7 +73,7 @@ with col2:
 	st.markdown(
         """
         <div style="text-align: right;">
-            <img src="https://raw.githubusercontent.com/RoobanSappani/TestRagProject/refs/heads/main/logo.png" alt="Logo" style="width: 50px; height: auto;">
+            <img src="https://raw.githubusercontent.com/RoobanSappani/TestRagProject/refs/heads/main/logo.png" alt="Logo" style="width: 50px; height: auto; marginTop: 18px">
         </div>
         """,
 	    unsafe_allow_html=True,
