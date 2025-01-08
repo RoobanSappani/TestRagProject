@@ -68,7 +68,7 @@ image = image.resize((25, 25))
 with col1:
 	st.image(image)
 with col2:
-	st.title("Your Educational AI Assistant")
+	st.title("MeritoBuddy AI")
 
 # Query input
 query = st.text_input("Enter your query:")
