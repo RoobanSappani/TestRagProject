@@ -62,6 +62,7 @@ vector_db = get_vector_database()
 
 col1, col2 = st.columns(2)
 image = Image.open('logo.png')
+image = image.resize((25, 25))
 
 # Streamlit UI
 with col1:
