@@ -62,13 +62,13 @@ vector_db = get_vector_database()
 
 col1, col2 = st.columns(2)
 image = Image.open('logo.png')
-image = image.resize((25, 25))
+image = image.resize((50, 50))
 
 # Streamlit UI
 with col1:
-	st.image(image)
-with col2:
 	st.title("MeritoBuddy AI")
+with col2:
+	st.image(image)
 
 # Query input
 query = st.text_input("Enter your query:")
