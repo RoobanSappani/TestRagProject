@@ -8,6 +8,7 @@ from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
 
 import google.generativeai as genai
+from PIL import Image
 
 genai.configure(api_key="AIzaSyCOXgeOwojSCvtbl3PN6dHkMpUYrrSuz-E")
 model = genai.GenerativeModel("gemini-1.5-flash")
@@ -59,8 +60,14 @@ def get_vector_database():
 
 vector_db = get_vector_database()
 
+col1, col2 = st.columns(2)
+image = Image.open('logo.png')
+
 # Streamlit UI
-st.title("Your Educational AI Assistant")
+with col1:
+	st.image(image)
+with col2:
+	st.title("Your Educational AI Assistant")
 
 # Query input
 query = st.text_input("Enter your query:")
