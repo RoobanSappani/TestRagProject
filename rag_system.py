@@ -66,7 +66,7 @@ image = image.resize((50, 50))
 
 # Streamlit UI
 with col1:
-	st.title("MeritoBuddy AI")
+	st.markdown("<h1 style='margin: 0;'>MeritoBuddy AI</h1>", unsafe_allow_html=True)
 with col2:
 	# st.image(image)
 
