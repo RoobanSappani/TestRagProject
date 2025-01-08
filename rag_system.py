@@ -66,7 +66,9 @@ image = image.resize((50, 50))
 
 # Streamlit UI
 with col1:
-	st.markdown("<h1 style='text-align: left; color: grey;'>MeritoBuddy AI</h1><img src='logo.png' style='align: right'>", unsafe_allow_html=True)
+	st.title("MeritoBuddy AI")
+with col2:
+	st.image(image, use_column_width = True)
 
 # Query input
 query = st.text_input("Enter your query:")
